@@ -1,0 +1,545 @@
+
+*{
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+
+#menu{
+  text-align: right;
+  margin-left: 60px;
+  margin-bottom: 23px;
+  border-radius: 5px;
+}
+
+#menu a{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 27px;
+  color: #58595b;
+  text-decoration: none;
+  font-family: Helvetica, Arical, Sans-Serif;
+}
+
+#menu a:hover{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+
+#photo {
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  color: #3f464d;
+  font-family: "Spoqa Han Sans Neo", "Sans-serif";
+  margin: 0 auto; /* margin 좌우를 오토로 설정하면 모든게 가운대로 . */
+}
+
+
+.inner {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.9rem;
+  overflow: hidden;
+}
+
+.title-container{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+
+.logbox{
+  /*background-color: #90CBFB;*/
+  /* margin: 10rem 5rem;
+  margin-top: 4%;
+  margin-right: 30rem; */
+  background-color: #90CBFB;
+  margin-top: 5rem;
+  opacity: 0.9;
+  
+  height: 44rem;
+  background-image: url('../images/logo.png');
+  z-index: 1;
+  background-size: cover; /* 이미지가 반복 될 때, 해결위해 사용*/
+  background-position: center 10%; 
+  margin-top: 11rem;
+  margin-bottom: 3rem;;
+}
+
+li img {
+  display: block; margin: 0px auto;
+}
+
+header{
+  width: 100%;
+  height: 60px;
+  background-color: #f8f9fa;
+  box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, .2);
+  position: fixed; /* 스크롤 처리가 안되도록 position: fixed설정해줌 */
+  top: 0;
+  left: 0px;
+}
+
+.head-container{
+  width: 100%;
+  height: 100%;
+  display: flex; /* 안에거를 수평 정렬해야 해서 */
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  background-color: #fff;
+  position: relative; /* 안넣어도 되는데, absolute라는 특정 하위 요소는 상위 relative 요소를 보고 잡는데 이를 위해 선언 */
+}
+
+.main {
+  height: 420px;
+  background-image: url('../images/main.jpg');
+  z-index: 1;
+  background-size: cover; /* 이미지가 반복 될 때, 해결위해 사용*/
+  background-position: center 80%; /* 사진 포지션값 설정*/
+}
+.main-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(47, 48, 49);
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.title{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 0.9rem;
+}
+
+.message{
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.4rem;
+}
+.map-container{
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding: 2rem 0;
+}
+
+.map {
+  width: 25%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, .2);
+  cursor:pointer;
+  transition: 0.4s;
+}
+
+.map:hover {
+  transform: translate(0, -5px)
+}
+
+.map-icon {
+  padding-left: 20px;
+  font-size: 2.5rem;
+  margin: 0 10px;
+}
+
+.map-title{
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.map-name {
+  font-weight: bold;
+  color: #545e6f;
+  margin-bottom: 0.2rem;
+}
+
+.map-usage{
+  font-size: 0.9rem;
+  color: #545e6f;
+}
+
+.mytech-container{
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.mytech-title-container{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mytech-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #545e6f;
+}
+
+
+.slide-prev {
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: rgb(47, 48, 49)
+}
+
+.slide-next {
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #cfd8dc;
+}
+
+.arrow-container{
+  display: flex;
+}
+
+
+.class-list{
+  display: flex;
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+  overflow: none;
+}
+
+.class-image{
+  max-width: 240px;
+  border-radius: 8px 8px 0 0;
+}
+
+
+.class-container {
+  width: 100%;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.class-skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class-type{
+  font-size: 0.9rem;
+  color: #949393
+}
+
+.class-format{
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #0d47a1;
+  padding: 0.2rem;
+}
+
+.class-desc{
+  width: 100%;
+  margin-top: 1rem;
+  color: #545e6f;
+}
+
+.class-desc:hover{
+  color: #FFD432;
+}
+
+.class-title {
+  font-weight: bold;
+  color: inherit;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.5rem;
+}
+
+.class-detail {
+  font-size: 0.9rem;
+  color: inherit;
+  line-height: 1.5rem;
+}
+
+.class-card{
+  max-width: 240px; /* 인터넷 익스플로러에서 이슈가 있어 max-width 사용*/
+  box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, .2);
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: 0.4s;
+  flex-shrink: 0;
+}
+
+.class-card:hover{
+  box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, .2);
+  transform: translate(0, -5px);
+}
+
+.class-detail {
+  display: visible;
+}
+
+.credit-style{
+  color: #2186c4;
+}
+
+a {
+  all: unset;
+}
+
+
+li a:hover {
+  cursor: pointer;
+}
+
+
+a:link {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:active {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+.head-container .head-brand a:hover {
+  color: #2186c4;
+  cursor: pointer; /* cursor 포인터로 한다는 뜻, */
+}
+
+.head-container .head-brand {
+  font-weight: bold;
+  padding: 0.5rem;
+  background-color: #FFD432;
+  font-size: 1.2rem;
+}
+
+.head-container .head-blog {
+  font-weight: bold;
+  padding: 0.5rem;
+  background-color: #FFD432;
+  font-size: 1.2rem;
+}
+
+
+.login-form{
+  width: 300px;
+  background-color: #EEEFF1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  padding: 20px
+
+}
+
+.text-field{
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.submit-btn{
+  font-size: 14px;
+  background-color: #1bbc9b;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+}
+
+.links {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.links a{
+  font-size: 12px;
+  color: #9B9B9B;
+}
+
+.link-container{
+  margin-top: 13px;
+  text-align: right;
+}
+
+.link-container a:not(:last-child){
+  margin-right: 5px;
+}
+
+footer {
+  border-top: 1px solid #e4e4e4;
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.footer-message{
+  font-weight: bold;
+  color: #545e6f;
+  margin: 0.3rem 0.5rem;
+}
+
+.footer-contact{
+  margin: 0 0.5rem;
+  color: #545e6f;
+}
+
+.footer-copyright{
+  margin: 1rem 0.5rem;
+  color: #545e6f;
+}
+
+#backtotop {
+  background-color: rgb(47, 48, 89);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+
+  border-radius:20px;
+  position: fixed;
+  bottom:30px;
+  right:30px;
+  transition-property: background-dolor, opacity, visibility;
+  transition-duration: 0.3s, 0.5s, 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999; /* 보이면, 어떤 요소보다 우선으로 보이게 하기 위해*/
+}
+
+/* 아이콘 적용 방법
+    1. ::after (요소 뒤에 content 추가) 가상 요소에서,
+    2. content: "fontawesome 유니코드"를 넣고,
+    3. font-family: fontAwesome 이라고 넣으면 됌 (이미지 넣을 수 있음)
+*/
+#backtotop::after{
+  content: "\f077";
+  font-family: FontAwesome;
+  font-size: 1.5rem;
+  line-height: 40px;
+  color: #fff;
+}
+
+#backtotop.show{
+  opacity: 1;
+  visibility: visible;
+  background-color: rgb(47, 48, 49);
+}
+
+#backtotop.show:hover {
+  cursor: pointer;
+  background-color: #2186c4;
+}
+
+
+#click-here{
+  border: 3px dashed #2186c4;
+  background-color: #FFD432;
+  border-radius:10px;
+  padding-left: 30px;
+}
+.super_picture{
+  margin-right: 10px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+/* drag 할 수 있는 아이템임을 나타내는 표시를 포인터로 변경함 */
+ul li img:hover {
+  cursor: grab; /* IE11에서는 지원 안함 */
+}
+
+/* dragging 중인 상태에서 잡는 표시를 포인터로 변경함 */
+ul li img:active {
+  cursor: grabbing; /* IE11에서는 지원 안함 */
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  .inner {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .skill-container {
+    display: none;
+  }
+  .roadmap-desc {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .class-skill {
+    display: none;
+  }
+  .class-container {
+    padding: 0.5rem;
+  }
+  .class-desc {
+    margin-top: 0rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.8rem;
+  }
+  .message {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #fff;
+    line-height: 2rem;
+  }
+  .class-skill {
+    display: none;
+  }
+  .class-container {
+    padding: 0.5rem;
+  }
+  .class-desc {
+    margin-top: 0.3rem;
+  }
+}
