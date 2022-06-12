@@ -27,7 +27,7 @@ const moveBackToTop = () => {
 }
 
 const moveToMain = () => {
-    window.scrollTo({top: 1300, behavior: "smooth"})
+    window.scrollTo({top: 1400, behavior: "smooth"})
 }
 
 window.addEventListener('scroll', checkScroll);
